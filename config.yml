@@ -1,0 +1,134 @@
+# ============================================================
+# Flappy Bird Configuration File
+# ============================================================
+#
+# WARNING:
+# Changing some values to extreme numbers may break gameplay,
+# collision systems, animation timing or physics behavior.
+#
+# Recommended:
+# - Keep FPS between 30 and 240
+# - Avoid negative sizes
+# - Avoid huge pipe gaps
+#
+# ============================================================
+
+game:
+  title: "Flappy Bird AI"
+  fps: 30
+  statistics: false
+
+assistent:
+  title: "Gen"
+
+  ai: true
+  generation: 0
+
+window:
+  width: 500
+  height: 800
+
+debug:
+  enabled: false
+  show_hitbox: false
+  show_fps: false
+
+colors:
+  score_text:
+    red: 255
+    green: 255
+    blue: 255
+
+font:
+  family: "arial"
+  size: 50
+
+bird:
+
+  # ==========================================================
+  # Physics
+  # ==========================================================
+
+  jump_force: -10.5
+  gravity: 1.5
+  max_fall_speed: 16
+  upward_boost: 2
+
+  # ==========================================================
+  # Rotation
+  # ==========================================================
+
+  max_rotation: 25
+  rotation_velocity: 20
+  falling_rotation_limit: -90
+  falling_animation_angle: -80
+
+  # ==========================================================
+  # Animation
+  # ==========================================================
+
+  animation_speed: 5
+
+  # ==========================================================
+  # Spawn
+  # ==========================================================
+
+  spawn_x: 130
+  spawn_y: 250
+
+pipe:
+
+  # ==========================================================
+  # Movement
+  # ==========================================================
+
+  velocity: 8
+
+  # ==========================================================
+  # Pipe generation
+  # ==========================================================
+
+  gap: 200
+
+  min_height: 50
+  max_height: 450
+
+  spawn_x: 700
+  next_pipe_spawn_x: 600
+
+ground:
+
+  velocity: 5
+  position_y: 730
+
+assets:
+
+  bird_idle: "bird1.png"
+  bird_flying: "bird2.png"
+  bird_run: "bird3.png"
+
+  pipe: "pipe.png"
+  background: "bg.png"
+  ground: "base.png"
+
+score:
+
+  enabled: true
+  text: "Point"
+
+collision:
+
+  remove_bird_on_collision: true
+  remove_bird_out_of_bounds: true
+
+controls:
+
+  jump_key: "SPACE"
+
+audio:
+
+  enabled: false
+
+  music_volume: 0.5
+  sound_volume: 0.7
+
