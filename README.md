@@ -10,7 +10,7 @@ Uma implementação do clássico Flappy Bird em Python com Pygame, onde uma inte
 
 ## 🎬 Demo
 
-<video src="assets/ai_playing.mp4" width="640" controls autoplay loop muted></video>
+![AI Playing](assets/ai_playing.gif)
 
 *IA treinada com NEAT aprendendo a passar pelos canos ao longo das gerações.*
 
